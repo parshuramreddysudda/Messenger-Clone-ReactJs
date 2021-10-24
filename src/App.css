@@ -2,37 +2,61 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.img{
+  width: 450px;
+  height: 200px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.css-46bh2p-MuiCardContent-root:last-child{
+  padding-bottom: 16;
+}
+
+.app_form{
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  background-color: #e9e9eb;
+  margin: 20px;;
+  width: 90%;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.app_controlform{
+  display: flex!important;
+  flex-direction: row!important;
+}
+.flexDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  z-index: 1;
+
+}
+.messageClass{
+  font-size: 20px;
+  text-align: left;
+}
+.usernameClass{
+font-size: 40px;
+text-align: left;
+font-weight: bold!important;
+}
+
+.input{
+  flex: 1;
+}
+.iconButton{
+  flex: 0;
+}
+
+.root{
+  margin: 30px;
 }

@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { collection, getDocs,getFirestore } from "firebase/firestore"; 
+import firebase from 'firebase/app'
+import "firebase/firestore";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -16,8 +17,21 @@ const firebaseConfig = {
 };
 
 
+firebase.initializeApp(firebaseConfig);
+const db=firebase.firestore();
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+ function sendMessage(user) {
+  db.collection('messages').add({
+    username: user.username,
+    message: user.message,
+    timestamp:firebase.firestore.FieldValue.serverTimestamp()
+  })
+}
 
-export default db;
+const services = {
+  db,
+  sendMessage
+}
+
+
+export default services;
