@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <img className="img" src="https://www.pnglib.com/wp-content/uploads/2021/02/facebook-messenger-icon_6020387b02c5a.png" />
-      <h1>Messenger CLone using React Js</h1>
+      <h1>Messenger Clone using React Js</h1>
       <h2>Hi {username || 'Unknown User'}</h2>
       <div className="flexDiv">
         <form className="app_form">
