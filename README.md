@@ -16,4 +16,4 @@ You will also see any lint errors in the console.
 
 Live link
 
-### `https://messenger-clone-react-js.vercel.app/`
+Open [https://messenger-clone-react-js.vercel.app/](https://messenger-clone-react-js.vercel.app/) to view it in the browser.
